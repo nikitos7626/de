@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2
 {
-    partial class Form2
+    partial class Auth
     {
         /// <summary>
         /// Required designer variable.

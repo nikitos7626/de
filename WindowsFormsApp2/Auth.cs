@@ -13,10 +13,10 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form2 : Form
+    public partial class Auth : Form
     {
         DatabaseConnect con;
-        public Form2()
+        public Auth()
         {
             InitializeComponent();
         }
@@ -38,7 +38,7 @@ namespace WindowsFormsApp2
             var password = textBox2.Text;
             if (name == "admin" && password == "admin")
             {
-                Form4 form4 = new Form4();
+                Admin form4 = new Admin();
                 form4.Show();
                 this.Hide();
             }
@@ -68,7 +68,7 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Registr form1 = new Registr();
             form1.Show();
             this.Hide();
         }

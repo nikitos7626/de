@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 
 namespace WindowsFormsApp2
 {
-    public partial class Form1 : Form
+    public partial class Registr : Form
     {
 
         DatabaseConnect con;
 
-        public Form1()
+        public Registr()
         {
             InitializeComponent();
             
@@ -39,7 +39,12 @@ namespace WindowsFormsApp2
                 SqlCommand command = new SqlCommand(query, database.GetConnection());
                 adap.SelectCommand = command;
                 adap.Fill(table);
-            
+
+            MessageBox.Show("регистрация успешна");
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
+
 
         }
 
